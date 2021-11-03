@@ -1,3 +1,59 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(221, 68, 47);
+  height: 3.5rem;
+  box-shadow: 0.5px 3px rgb(219, 74, 74);
+}
+
+.title {
+  color: rgb(255, 255, 255);
+}
+
+.pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pokemon-card {
+  display: flex;
+  border: 1px solid gray;
+  flex-grow: 1;
+  width: 45%;
+  margin-top: 10px;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 1rem 1rem;
+  box-shadow: 1.5px 1.5px gray;
+}
+
+.pokemon-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+.pokemon-type {
+  margin: 10px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  background-color: rgb(221, 68, 47);
+  box-shadow: 0.5px -3px rgb(219, 74, 74);
+}
+
+.footer-content {
+  color:rgb(255, 255, 255)
 }
