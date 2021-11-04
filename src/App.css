@@ -8,13 +8,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(221, 68, 47);
+  background-color: rgba(235, 79, 79, 0.897);
   height: 3.5rem;
   box-shadow: 0.5px 3px rgb(219, 74, 74);
 }
 
 .title {
   color: rgb(255, 255, 255);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50vh;
+  width: 90%;
+  margin: 5rem auto;
 }
 
 .pokemon-container {
@@ -46,14 +55,95 @@
 }
 
 .footer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 3.5rem;
-  background-color: rgb(221, 68, 47);
+  background-color: rgba(235, 79, 79, 0.897);
   box-shadow: 0.5px -3px rgb(219, 74, 74);
 }
 
 .footer-content {
   color:rgb(255, 255, 255)
+}
+
+.type-btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+}
+
+.btn-type {
+  margin-left: 0.5rem;
+  color: rgb(255, 255, 255);
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.btn-type, .next-btn, .previous-btn {
+  padding: .6rem;
+  border: none;
+  box-shadow: 1px 1px .5px .2px rgba(82, 81, 81, 0.938);
+  background-color:rgba(235, 79, 79, 0.897);
+  border-radius: 5px;
+  opacity: 0.87;
+  transition: all 0.3s ease;
+}
+
+.btn-type:hover, .next-btn:hover, .previous-btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.next-btn-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.next-btn {
+  background-color:rgb(255, 217, 0);
+  font-size: .9rem;
+  font-weight: 600;
+  color: rgb(41, 41, 41);
+}
+
+.right-arrow {
+  height: 1.5rem
+}
+
+.previous-btn {
+  background-color:rgb(255, 217, 0);
+  font-size: .9rem;
+  font-weight: 600;
+  color: rgb(41, 41, 41);
+  margin-left: 1rem;
+}
+
+.left-arrow {
+  height: 1.5rem
+}
+
+@media screen and (max-width: 1170px) {
+  .type-btn-container, .next-btn-container {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .btn-type {
+    width: 40%;
+    margin-top: .5rem;
+  }
+
+  .next-btn {
+    width: 30%;
+  }
+  .previous-btn {
+    width: 30%;
+  }
 }

@@ -21,7 +21,11 @@ class Pokemon extends Component {
 }
 
 Pokemon.propTypes = {
-  pokemons: PropTypes.object
+  pokemons: PropTypes.object,
+  name: PropTypes.string,
+  type: PropTypes.string,
+  averageWeight: PropTypes.object,
+  image: PropTypes.string
 }
 
 export default Pokemon;
